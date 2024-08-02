@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white; /* Set default background color */
+            transition: background-color 0.5s; /* Smooth color transition */
+        }
+        .container {
+            text-align: center; /* Center text and button horizontally */
+        }
+        .heading {
+            font-size: 40px;
+            font-family: sans-serif;
+            margin-bottom: 20px; /* Add space between heading and button */
+        }
+        .btn {
+            border: 0;
+            outline: 0;
+            background-color: teal;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px; /* Adjust padding for better button size */
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .btn:hover{
+            background-color: orangered;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Change Background Color</h1>
+        <button class="btn" id="changeColorBtn">Change Color</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
